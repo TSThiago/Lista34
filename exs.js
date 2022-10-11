@@ -27,13 +27,14 @@ function ContarDigito(n, d) {
         arrayQuadrado.push(index * index);
     }
     arrayQuadrado.forEach(function (x) {
-        var numeroArray = x.toString().split('').filter(function (numero) { return x; });
+        var numeroArray = x.toString().split('');
         numeroArray.forEach(function (y) {
             if (d == y) {
                 contador++;
             }
         });
     });
+    console.log(d);
     console.log(arrayQuadrado);
     return contador;
 }

@@ -35,13 +35,14 @@ function ContarDigito(n : number, d : string) : number{
         arrayQuadrado.push(index * index)
     }
     arrayQuadrado.forEach(x => {
-        let numeroArray : string[] = x.toString().split('').filter(numero => x)
+        let numeroArray : string[] = x.toString().split('')
         numeroArray.forEach(y => {
             if(d == y){
                 contador++
             }
         })
     })
+    console.log(d)
     console.log(arrayQuadrado)
     return contador
 }
